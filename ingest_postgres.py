@@ -59,7 +59,7 @@ def load_csv_to_table(
     dtype: dict,
     parse_dates: list[str] | None = None,
     boolean_cols: list[str] | None = None,
-    schema: str = "raw",
+    schema: str = "data_warehouse",
 ) -> None:
     """
     Stream a CSV file into a Postgres table in chunks, optionally parsing
